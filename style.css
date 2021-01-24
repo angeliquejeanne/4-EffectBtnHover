@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: darkgrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    background: chartreuse;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: 80vh;
+}
+.container h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+}
+.content {
+    align-items: center;
+    width: 80%;
+    background: chocolate;
+}
+.btn {
+    margin: 20px auto;
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: snow;
+}
+.btn1 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn1::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(-45deg);
+    left: -150px;
+}
+.btn1:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(500px) rotate(-45deg);
+}
+.btn2 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn2::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(-90deg);
+    left: -150px;
+}
+.btn2:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(500px) rotate(-90deg);
+}
+.btn3 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn3::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(-135deg);
+    left: -150px;
+}
+.btn3:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(500px) rotate(-135deg);
+}
+.btn4 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn4::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(-180deg);
+    left: -250px;
+}
+.btn4:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(500px) rotate(-180deg);
+}
+
+
+.btn5 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn5::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(45deg);
+    right: -150px;
+}
+.btn5:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(-500px) rotate(45deg);
+}
+.btn6 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn6::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(90deg);
+    right: -150px;
+}
+.btn6:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(-500px) rotate(90deg);
+}
+.btn7 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn7::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(135deg);
+    right: -150px;
+}
+.btn7:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(-500px) rotate(135deg);
+}
+.btn8 {
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.btn8::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(180deg);
+    right: -250px;
+}
+.btn8:hover::before {
+    transition: 1s transform linear;
+    transform: translateX(-500px) rotate(180deg);
+}
+/* btn3 */
+
+.btnA {
+    border: 2px solid #f1f1f1;
+    box-shadow: 0 0 0 0 #f1f1f1 inset;
+    position: relative;
+    transition: box-shadow 0.3s linear;
+}
+.btnA::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+.btnA:hover {
+    box-shadow: 0 0 50px -20px lightgrey inset;
+}
+.btnA:hover::before {
+    transition: all 0.3s linear;
+    width: 120%;
+    height: 150%;
+    border: 2px solid transparent;
+}
